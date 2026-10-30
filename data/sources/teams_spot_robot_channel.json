@@ -1,0 +1,130 @@
+{
+  "value": [
+    {
+      "id": "1726000000000",
+      "messageType": "message",
+      "createdDateTime": "2026-09-04T14:05:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Priya Nair",
+          "userPrincipalName": "priya.nair@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Readings for BFP-A discharge pressure gauge PI-204 jump between 118 and 141 bar on afternoon missions. Morning missions are steady at ~125. The captured photos from the afternoon have a reflection hotspot sitting on the needle. Can the robot take the picture from a different angle or take several and pick the best one?</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726086400123",
+      "messageType": "message",
+      "createdDateTime": "2026-09-22T05:50:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Luis Ortega",
+          "userPrincipalName": "luis.ortega@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>This is the third false thermal alarm on T-2 this month. Each callout is a 2-hour minimum for the on-call electrician and somebody has to walk into the switchyard at night. If the robot keeps crying wolf, people will start ignoring its alarms and we'll miss a real one. Thermal alarms need to be checked against control-room current before anyone gets paged.</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726172800246",
+      "messageType": "message",
+      "createdDateTime": "2026-09-18T13:30:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Aiko Tanaka",
+          "userPrincipalName": "aiko.tanaka@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>During outage prep the scaffolding crew was using the turbine hall stairs most of the day and Spot aborted 4 missions in a row. We had zero turbine hall data for two days. It should wait and retry, or take the east stairs, instead of giving up on the whole mission.</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726259200369",
+      "messageType": "message",
+      "createdDateTime": "2026-09-25T09:45:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Jake Morrison",
+          "userPrincipalName": "jake.morrison@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Came up stairwell S-3 behind Spot with a tool bag. It stopped dead halfway up and didn't move. I had to squeeze past a 30 kg robot on a steep grated stair, which is not safe for me or the robot. There needs to be a clear rule for what it does when people are on the stairs with it, like back off to the landing. <at id=\"0\">Sam Reilly</at> can we go over this at Thursday's toolbox talk?</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726345600492",
+      "messageType": "message",
+      "createdDateTime": "2026-10-01T21:10:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Dana Whitfield",
+          "userPrincipalName": "dana.whitfield@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Evening round takes about 95 minutes but the battery is good for about 85 with the stairs. Could we split it into two missions with a charge in between, or have the robot recharge mid-route and resume where it left off? Right now the last section is never done.</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726432000615",
+      "messageType": "message",
+      "createdDateTime": "2026-09-20T02:25:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Grace Mensah",
+          "userPrincipalName": "grace.mensah@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Robot alerts only go to email and the Spot web dashboard. On nights we are in the field with radios and handhelds, not at a desk. Alerts need to show up in the DCS alarm list or push to the operator handhelds, with escalation if nobody acknowledges.</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    },
+    {
+      "id": "1726518400738",
+      "messageType": "message",
+      "createdDateTime": "2026-09-27T14:40:00-05:00",
+      "from": {
+        "user": {
+          "displayName": "Chen Wei",
+          "userPrincipalName": "chen.wei@ridgeview-power.example"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<p>Acoustic leak detection flags a steam leak on the HP bypass valve every run while the bypass is in service. That's normal flow noise through the valve, not a leak. It needs to know whether the bypass is open (it's in the DCS) before deciding something is leaking.</p>"
+      },
+      "channelIdentity": {
+        "channelDisplayName": "spot-robot"
+      }
+    }
+  ]
+}

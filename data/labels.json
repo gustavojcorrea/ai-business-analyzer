@@ -1,0 +1,22 @@
+{
+  "FB-001": {"category": "perception", "priority": 1},
+  "FB-002": {"category": "perception", "priority": 2},
+  "FB-003": {"category": "perception", "priority": 2},
+  "FB-004": {"category": "sensing", "priority": 2},
+  "FB-005": {"category": "sensing", "priority": 2},
+  "FB-006": {"category": "sensing", "priority": 1},
+  "FB-007": {"category": "mobility_route", "priority": 1},
+  "FB-008": {"category": "mobility_route", "priority": 2},
+  "FB-009": {"category": "mobility_route", "priority": 1},
+  "FB-010": {"category": "mobility_route", "priority": 2},
+  "FB-011": {"category": "mobility_route", "priority": 2},
+  "FB-012": {"category": "alerts", "priority": 1},
+  "FB-013": {"category": "alerts", "priority": 1},
+  "FB-014": {"category": "alerts", "priority": 2},
+  "FB-015": {"category": "feature_request", "priority": 2},
+  "FB-016": {"category": "feature_request", "priority": 3},
+  "FB-017": {"category": "feature_request", "priority": 3},
+  "FB-018": {"category": "sensing", "priority": 2},
+  "FB-019": {"category": "perception", "priority": 2},
+  "FB-020": {"category": "sensing", "priority": 1}
+}

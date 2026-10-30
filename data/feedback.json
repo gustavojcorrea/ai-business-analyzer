@@ -1,0 +1,162 @@
+[
+  {
+    "id": "FB-001",
+    "date": "2026-09-02",
+    "author_role": "Control room operator",
+    "shift": "day",
+    "mission": "HRSG-2 Lower Deck",
+    "text": "Spot logged HRSG-2 HP drum level gauge LG-2101 at 62% on the 15:10 run. Local reading at the glass was 48%. Looking at the image, afternoon sun through the west louvers is putting a big white glare patch right over the gauge face. Third time this week the afternoon run has been wrong on this one."
+  },
+  {
+    "id": "FB-002",
+    "date": "2026-09-04",
+    "author_role": "I&C technician",
+    "shift": "day",
+    "mission": "Feedwater Pumps",
+    "text": "Readings for BFP-A discharge pressure gauge PI-204 jump between 118 and 141 bar on afternoon missions. Morning missions are steady at ~125. The captured photos from the afternoon have a reflection hotspot sitting on the needle. Can the robot take the picture from a different angle or take several and pick the best one?"
+  },
+  {
+    "id": "FB-003",
+    "date": "2026-09-09",
+    "author_role": "Mechanical technician",
+    "shift": "night",
+    "mission": "GT-1 Enclosure",
+    "text": "Gauge reader reported GT-1 lube oil supply pressure as 0.0 bar and threw a low-pressure alert. Actual was 2.4 bar. The new LED floodlight installed above the skid last week completely washes out the gauge in the photo. We went out to check for nothing."
+  },
+  {
+    "id": "FB-004",
+    "date": "2026-09-11",
+    "author_role": "Electrical technician (on-call)",
+    "shift": "night",
+    "mission": "Switchyard & GSU",
+    "text": "Got paged at 02:10 for a thermal anomaly on GSU transformer T-2, HV bushing B phase, 92 °C. Control room had T-2 load current at ~1,050 A, well under nameplate, and no top-oil or winding temp alarms in the DCS. Handheld IR on site showed 41 °C. Looks like the robot's thermal reading is off, maybe emissivity setting for the porcelain."
+  },
+  {
+    "id": "FB-005",
+    "date": "2026-09-15",
+    "author_role": "Electrical engineer",
+    "shift": "day",
+    "mission": "Aux Electrical Building",
+    "text": "Thermal check flagged a hotspot on the 6.6 kV aux bus duct joint (taken through the IR inspection window). DCS shows bus current was only about 40% of rating at the time, so a real overheating joint is unlikely. Suspect reflection of the room lighting off the window. Thermal alarms should be compared against the actual load before they're raised."
+  },
+  {
+    "id": "FB-006",
+    "date": "2026-09-22",
+    "author_role": "Shift supervisor",
+    "shift": "night",
+    "mission": "Switchyard & GSU",
+    "text": "This is the third false thermal alarm on T-2 this month. Each callout is a 2-hour minimum for the on-call electrician and somebody has to walk into the switchyard at night. If the robot keeps crying wolf, people will start ignoring its alarms and we'll miss a real one. Thermal alarms need to be checked against control-room current before anyone gets paged."
+  },
+  {
+    "id": "FB-007",
+    "date": "2026-09-03",
+    "author_role": "Control room operator",
+    "shift": "day",
+    "mission": "HRSG Upper Decks",
+    "text": "Mission 'HRSG Upper Decks' aborted at stairwell S-3 because two contractors were coming down the stairs. Spot stopped, waited a few seconds, and went back to the dock. Drum level, safety valve and blowdown checks on decks 4-6 never happened that run, and nobody told us it had aborted until we noticed the gap in the report."
+  },
+  {
+    "id": "FB-008",
+    "date": "2026-09-18",
+    "author_role": "Outage planner",
+    "shift": "day",
+    "mission": "Turbine Hall",
+    "text": "During outage prep the scaffolding crew was using the turbine hall stairs most of the day and Spot aborted 4 missions in a row. We had zero turbine hall data for two days. It should wait and retry, or take the east stairs, instead of giving up on the whole mission."
+  },
+  {
+    "id": "FB-009",
+    "date": "2026-09-25",
+    "author_role": "Mechanical technician",
+    "shift": "day",
+    "mission": "HRSG Upper Decks",
+    "text": "Came up stairwell S-3 behind Spot with a tool bag. It stopped dead halfway up and didn't move. I had to squeeze past a 30 kg robot on a steep grated stair, which is not safe for me or the robot. There needs to be a clear rule for what it does when people are on the stairs with it, like back off to the landing."
+  },
+  {
+    "id": "FB-010",
+    "date": "2026-09-08",
+    "author_role": "Robotics program lead",
+    "shift": "day",
+    "mission": "Full Plant Evening Round",
+    "text": "The full evening round (cooling tower -> HRSG -> GT enclosures -> water treatment) can't finish on one battery. Spot heads back to the dock at roughly 78% of waypoints, so the water treatment chemical dosing gauges and the demin tank levels are skipped every single evening. That is 14 measurement points a day we think we have but don't."
+  },
+  {
+    "id": "FB-011",
+    "date": "2026-10-01",
+    "author_role": "Control room operator",
+    "shift": "night",
+    "mission": "Full Plant Evening Round",
+    "text": "Evening round takes about 95 minutes but the battery is good for about 85 with the stairs. Could we split it into two missions with a charge in between, or have the robot recharge mid-route and resume where it left off? Right now the last section is never done."
+  },
+  {
+    "id": "FB-012",
+    "date": "2026-09-14",
+    "author_role": "Shift supervisor",
+    "shift": "night",
+    "mission": "Generator & Seal Oil",
+    "text": "Spot raised an elevated hydrogen alert near the generator seal oil unit at 03:12. It sat unacknowledged in the web dashboard until day shift opened it at 07:05. Nobody on nights has the dashboard open, they're watching the DCS. Turned out to be a minor fitting leak, but four hours on an H2 alert is not acceptable."
+  },
+  {
+    "id": "FB-013",
+    "date": "2026-09-20",
+    "author_role": "Field operator",
+    "shift": "night",
+    "mission": "General",
+    "text": "Robot alerts only go to email and the Spot web dashboard. On nights we are in the field with radios and handhelds, not at a desk. Alerts need to show up in the DCS alarm list or push to the operator handhelds, with escalation if nobody acknowledges."
+  },
+  {
+    "id": "FB-014",
+    "date": "2026-10-06",
+    "author_role": "Maintenance planner",
+    "shift": "day",
+    "mission": "Feedwater Pumps",
+    "text": "Low oil level alert on BFP-B outboard bearing came in Saturday 22:40 and wasn't seen until Monday morning. Bearing turned out fine and we topped it up, but we lost a day and a half of reaction time on a boiler feed pump."
+  },
+  {
+    "id": "FB-015",
+    "date": "2026-09-29",
+    "author_role": "Environmental compliance engineer",
+    "shift": "day",
+    "mission": "-",
+    "text": "Please add the new CEMS shelter to a route. Operators walk there twice a shift to check the sample line heater temperature, the NOx analyzer status lights and the calibration gas bottle pressures. Missing a cal gas bottle running empty can cost us valid emissions data hours."
+  },
+  {
+    "id": "FB-016",
+    "date": "2026-10-03",
+    "author_role": "Field operator",
+    "shift": "day",
+    "mission": "-",
+    "text": "Nice to have: could Spot read the cooling tower basin staff gauge? We have a level transmitter but it drifts, so a weekly photo to compare would be handy. Not urgent."
+  },
+  {
+    "id": "FB-017",
+    "date": "2026-10-09",
+    "author_role": "Safety coordinator",
+    "shift": "day",
+    "mission": "-",
+    "text": "Request: a monthly mission that photographs every fire extinguisher pressure gauge and inspection tag on the turbine deck, so we can fill in the fire inspection log from the pictures instead of walking it with a clipboard."
+  },
+  {
+    "id": "FB-018",
+    "date": "2026-09-27",
+    "author_role": "Mechanical engineer",
+    "shift": "day",
+    "mission": "HRSG-1 Lower Deck",
+    "text": "Acoustic leak detection flags a steam leak on the HP bypass valve every run while the bypass is in service. That's normal flow noise through the valve, not a leak. It needs to know whether the bypass is open (it's in the DCS) before deciding something is leaking."
+  },
+  {
+    "id": "FB-019",
+    "date": "2026-10-04",
+    "author_role": "Mechanical technician",
+    "shift": "day",
+    "mission": "GT-1 Enclosure",
+    "text": "Oil level check on the GT-1 lube oil reservoir sight glass comes back 'unable to read' about half the time. The glass is stained with varnish and the oil line is hard to see even for a person. Can the model be retrained on dirty glass, or can it flag 'glass needs cleaning' instead of just failing?"
+  },
+  {
+    "id": "FB-020",
+    "date": "2026-10-12",
+    "author_role": "Chemistry technician",
+    "shift": "day",
+    "mission": "Water Treatment",
+    "text": "Spot's gas payload reported 0 ppm H2S in the condensate polishing area while my personal monitor alarmed at 6 ppm right next to it. If the robot under-reads toxic gas we can't use it as the 'send it in first' check, which was the whole point. When was the gas sensor last bump-tested?"
+  }
+]

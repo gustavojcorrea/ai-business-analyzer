@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 532" width="1040" height="532" role="img" aria-labelledby="title desc">
+<title id="title">Impact score breakdown by issue</title>
+<desc id="desc">Stacked horizontal bars showing how worker safety, downtime risk, missed measurements and false alarms contribute to each ranked issue&#x27;s impact score.</desc>
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .surface { fill: #fcfcfb; stroke: rgba(11,11,11,0.10); }
+  .t1 { fill: #0b0b0b; } .t2 { fill: #52514e; } .t3 { fill: #898781; }
+  .grid { stroke: #e1e0d9; } .axis { stroke: #c3c2b7; }
+  .box { fill: #fcfcfb; stroke: #c3c2b7; } .box-model { fill: #eef4fc; stroke: #86b6ef; }
+  .pill-model { fill: #2a78d6; } .pill-local { fill: #52514e; } .on-pill { fill: #ffffff; }
+  .arrow { stroke: #898781; fill: none; } .arrowhead { fill: #898781; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hurdle { fill: #d03b3b; } .gain { fill: #0ca30c; }
+  .boundary { fill: none; stroke: #898781; }
+  .s0 { fill: #2a78d6; } .b0 { stroke: #2a78d6; }
+  .s1 { fill: #eb6834; } .b1 { stroke: #eb6834; }
+  .s2 { fill: #1baf7a; } .b2 { stroke: #1baf7a; }
+  .s3 { fill: #eda100; } .b3 { stroke: #eda100; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; stroke: rgba(255,255,255,0.10); }
+    .t1 { fill: #f0efec; } .t2 { fill: #c3c2b7; } .t3 { fill: #898781; }
+    .grid { stroke: #2c2c2a; } .axis { stroke: #383835; }
+    .box { fill: #1a1a19; stroke: #383835; } .box-model { fill: #16263b; stroke: #256abf; }
+    .pill-model { fill: #3987e5; } .pill-local { fill: #52514e; }
+    .s0 { fill: #3987e5; } .b0 { stroke: #3987e5; }
+    .s1 { fill: #d95926; } .b1 { stroke: #d95926; }
+    .s2 { fill: #199e70; } .b2 { stroke: #199e70; }
+    .s3 { fill: #c98500; } .b3 { stroke: #c98500; }
+  }
+</style>
+<rect class="surface" x="0.5" y="0.5" width="1039" height="531" rx="12"/>
+<text x="24.0" y="38.0" class="t1" font-size="17" text-anchor="start" font-weight="600">What drives each issue&#x27;s impact score</text>
+<text x="24.0" y="60.0" class="t2" font-size="13" text-anchor="start" font-weight="400">Score = weighted sum of four estimates (0–100). Segment length is each dimension&#x27;s contribution in points.</text>
+<rect class="s0" x="24" y="82" width="12" height="12" rx="3"/>
+<text x="42.0" y="92.5" class="t2" font-size="12" text-anchor="start" font-weight="400">Worker safety exposure (35)</text>
+<rect class="s1" x="226.8" y="82" width="12" height="12" rx="3"/>
+<text x="244.8" y="92.5" class="t2" font-size="12" text-anchor="start" font-weight="400">Downtime risk (30)</text>
+<rect class="s2" x="372.0" y="82" width="12" height="12" rx="3"/>
+<text x="390.0" y="92.5" class="t2" font-size="12" text-anchor="start" font-weight="400">Missed measurement points (20)</text>
+<rect class="s3" x="594.0" y="82" width="12" height="12" rx="3"/>
+<text x="612.0" y="92.5" class="t2" font-size="12" text-anchor="start" font-weight="400">False-alarm callouts (15)</text>
+<line class="axis" x1="470.0" y1="116" x2="470.0" y2="492" stroke-width="1"/>
+<text x="470.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">0</text>
+<line class="grid" x1="568.0" y1="116" x2="568.0" y2="492" stroke-width="1"/>
+<text x="568.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">10</text>
+<line class="grid" x1="666.0" y1="116" x2="666.0" y2="492" stroke-width="1"/>
+<text x="666.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">20</text>
+<line class="grid" x1="764.0" y1="116" x2="764.0" y2="492" stroke-width="1"/>
+<text x="764.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">30</text>
+<line class="grid" x1="862.0" y1="116" x2="862.0" y2="492" stroke-width="1"/>
+<text x="862.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">40</text>
+<line class="grid" x1="960.0" y1="116" x2="960.0" y2="492" stroke-width="1"/>
+<text x="960.0" y="510.0" class="t3 num" font-size="12" text-anchor="middle" font-weight="400">50</text>
+<text x="24.0" y="138.5" class="t3" font-size="12" text-anchor="start" font-weight="600">1</text>
+<text x="44.0" y="138.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Route Spot inspection alerts into DCS alarm list and…</text>
+<rect class="s0" x="470.0" y="124" width="255.2" height="20"/>
+<path class="s1" d="M727.2,124.0 H943.8 Q947.8,124.0 947.8,128.0 V140.0 Q947.8,144.0 943.8,144.0 H727.2 Z"/>
+<text x="958.2" y="138.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">49.0</text>
+<text x="24.0" y="172.5" class="t3" font-size="12" text-anchor="start" font-weight="600">2</text>
+<text x="44.0" y="172.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Gate Spot thermal alarms on live DCS load/temperature…</text>
+<rect class="s0" x="470.0" y="158" width="169.5" height="20"/>
+<rect class="s1" x="641.5" y="158" width="145.0" height="20"/>
+<rect class="s2" x="788.5" y="158" width="1.9" height="20"/>
+<path class="s3" d="M792.4,158.0 H847.2 Q851.2,158.0 851.2,162.0 V174.0 Q851.2,178.0 847.2,178.0 H792.4 Z"/>
+<text x="859.2" y="172.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">38.9</text>
+<text x="24.0" y="206.5" class="t3" font-size="12" text-anchor="start" font-weight="600">3</text>
+<text x="44.0" y="206.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Spot gas payload under-reads H2S versus personal monitor (0…</text>
+<rect class="s0" x="470.0" y="192" width="255.2" height="20"/>
+<rect class="s1" x="727.2" y="192" width="71.5" height="20"/>
+<path class="s2" d="M800.8,192.0 H836.0 Q840.0,192.0 840.0,196.0 V208.0 Q840.0,212.0 836.0,212.0 H800.8 Z"/>
+<text x="848.4" y="206.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">37.8</text>
+<text x="24.0" y="240.5" class="t3" font-size="12" text-anchor="start" font-weight="600">4</text>
+<text x="44.0" y="240.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Gauge reader returns wrong values when glare, reflections or…</text>
+<rect class="s0" x="470.0" y="226" width="83.8" height="20"/>
+<rect class="s1" x="555.8" y="226" width="145.0" height="20"/>
+<rect class="s2" x="702.8" y="226" width="21.5" height="20"/>
+<path class="s3" d="M726.3,226.0 H781.1 Q785.1,226.0 785.1,230.0 V242.0 Q785.1,246.0 781.1,246.0 H726.3 Z"/>
+<text x="792.6" y="240.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">32.1</text>
+<text x="24.0" y="274.5" class="t3" font-size="12" text-anchor="start" font-weight="600">5</text>
+<text x="44.0" y="274.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Spot needs stairwell yield, wait-retry and reroute behavior…</text>
+<rect class="s0" x="470.0" y="260" width="169.5" height="20"/>
+<rect class="s1" x="641.5" y="260" width="71.5" height="20"/>
+<path class="s2" d="M715.0,260.0 H769.8 Q773.8,260.0 773.8,264.0 V276.0 Q773.8,280.0 769.8,280.0 H715.0 Z"/>
+<text x="781.8" y="274.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">31.0</text>
+<text x="24.0" y="308.5" class="t3" font-size="12" text-anchor="start" font-weight="600">6</text>
+<text x="44.0" y="308.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Suppress acoustic leak false positives on HRSG-1 HP bypass…</text>
+<rect class="s0" x="470.0" y="294" width="83.8" height="20"/>
+<rect class="s1" x="555.8" y="294" width="71.5" height="20"/>
+<rect class="s2" x="629.2" y="294" width="3.9" height="20"/>
+<path class="s3" d="M635.1,294.0 H748.7 Q752.7,294.0 752.7,298.0 V310.0 Q752.7,314.0 748.7,314.0 H635.1 Z"/>
+<text x="761.2" y="308.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">28.9</text>
+<text x="24.0" y="342.5" class="t3" font-size="12" text-anchor="start" font-weight="600">7</text>
+<text x="44.0" y="342.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Full Plant Evening Round exceeds Spot battery range: add…</text>
+<rect class="s1" x="470.0" y="328" width="71.5" height="20"/>
+<path class="s2" d="M543.5,328.0 H731.6 Q735.6,328.0 735.6,332.0 V344.0 Q735.6,348.0 731.6,348.0 H543.5 Z"/>
+<text x="743.6" y="342.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">27.1</text>
+<text x="24.0" y="376.5" class="t3" font-size="12" text-anchor="start" font-weight="600">8</text>
+<text x="44.0" y="376.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Oil level check returns &#x27;unable to read&#x27; on varnish-stained…</text>
+<rect class="s0" x="470.0" y="362" width="83.8" height="20"/>
+<rect class="s1" x="555.8" y="362" width="71.5" height="20"/>
+<rect class="s2" x="629.2" y="362" width="5.8" height="20"/>
+<path class="s3" d="M637.1,362.0 H662.5 Q666.5,362.0 666.5,366.0 V378.0 Q666.5,382.0 662.5,382.0 H637.1 Z"/>
+<text x="675.0" y="376.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">20.1</text>
+<text x="24.0" y="410.5" class="t3" font-size="12" text-anchor="start" font-weight="600">9</text>
+<text x="44.0" y="410.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Add weekly cooling tower basin staff gauge reading to Spot…</text>
+<text x="480.0" y="410.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">0.2</text>
+<text x="24.0" y="444.5" class="t3" font-size="12" text-anchor="start" font-weight="600">10</text>
+<text x="44.0" y="444.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Add CEMS shelter inspection points to Spot routes: sample…</text>
+<text x="478.0" y="444.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">0.0</text>
+<text x="24.0" y="478.5" class="t3" font-size="12" text-anchor="start" font-weight="600">11</text>
+<text x="44.0" y="478.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Add monthly turbine-deck mission to photograph fire…</text>
+<text x="478.0" y="478.5" class="t1 num" font-size="13" text-anchor="start" font-weight="600">0.0</text>
+</svg>

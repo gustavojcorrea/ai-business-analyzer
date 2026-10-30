@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 754" width="1040" height="754" role="img" aria-labelledby="title desc">
+<title id="title">Feedback process before and after the agent</title>
+<desc id="desc">Two side-by-side flowcharts. Left: the manual feedback process and its hurdles at each step. Right: the same process with the agent classifying, merging, drafting and ranking, and the gain at each step.</desc>
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .surface { fill: #fcfcfb; stroke: rgba(11,11,11,0.10); }
+  .t1 { fill: #0b0b0b; } .t2 { fill: #52514e; } .t3 { fill: #898781; }
+  .grid { stroke: #e1e0d9; } .axis { stroke: #c3c2b7; }
+  .box { fill: #fcfcfb; stroke: #c3c2b7; } .box-model { fill: #eef4fc; stroke: #86b6ef; }
+  .pill-model { fill: #2a78d6; } .pill-local { fill: #52514e; } .on-pill { fill: #ffffff; }
+  .arrow { stroke: #898781; fill: none; } .arrowhead { fill: #898781; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hurdle { fill: #d03b3b; } .gain { fill: #0ca30c; }
+  .boundary { fill: none; stroke: #898781; }
+
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; stroke: rgba(255,255,255,0.10); }
+    .t1 { fill: #f0efec; } .t2 { fill: #c3c2b7; } .t3 { fill: #898781; }
+    .grid { stroke: #2c2c2a; } .axis { stroke: #383835; }
+    .box { fill: #1a1a19; stroke: #383835; } .box-model { fill: #16263b; stroke: #256abf; }
+    .pill-model { fill: #3987e5; } .pill-local { fill: #52514e; }
+
+  }
+</style>
+<rect class="surface" x="0.5" y="0.5" width="1039" height="753" rx="12"/>
+<text x="24.0" y="38.0" class="t1" font-size="17" text-anchor="start" font-weight="600">Where the agent fits in the plant&#x27;s feedback process</text>
+<text x="24.0" y="60.0" class="t2" font-size="13" text-anchor="start" font-weight="400">Same people, same reports. The agent takes over the reading, sorting and first drafts between the report and the engineering decision.</text>
+<line class="grid" x1="520" y1="92" x2="520" y2="730" stroke-width="1"/>
+<text x="24.0" y="108.0" class="t1" font-size="15" text-anchor="start" font-weight="600">Today: manual triage</text>
+<text x="24.0" y="127.0" class="t3" font-size="12" text-anchor="start" font-weight="400">Every step is done by hand</text>
+<text x="540.0" y="108.0" class="t1" font-size="15" text-anchor="start" font-weight="600">With the feedback agent</text>
+<text x="540.0" y="127.0" class="t3" font-size="12" text-anchor="start" font-weight="400">AI does the reading, sorting and drafting; people decide</text>
+<rect class="box" x="24" y="150" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="172.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Reports come in</text>
+<text x="36.0" y="191.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Emails, shift logs, radio calls,</text>
+<text x="36.0" y="206.0" class="t2" font-size="12" text-anchor="start" font-weight="400">chat</text>
+<circle class="hurdle" cx="263" cy="163" r="9"/>
+<text x="263.0" y="167.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="167.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="184.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Scattered across channels; the same</text>
+<text x="280.0" y="199.0" class="t2" font-size="12" text-anchor="start" font-weight="400">failure is described in different</text>
+<text x="280.0" y="214.0" class="t2" font-size="12" text-anchor="start" font-weight="400">words.</text>
+<rect class="box" x="540" y="150" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="172.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Reports come in</text>
+<text x="552.0" y="191.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Same channels, collected into</text>
+<text x="552.0" y="206.0" class="t2" font-size="12" text-anchor="start" font-weight="400">one feedback file</text>
+<circle class="gain" cx="779" cy="163" r="9"/>
+<text x="779.0" y="167.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="167.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="184.0" class="t2" font-size="12" text-anchor="start" font-weight="400">One feed, so nothing depends on who</text>
+<text x="796.0" y="199.0" class="t2" font-size="12" text-anchor="start" font-weight="400">happened to read which email.</text>
+<rect class="box" x="24" y="250" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="272.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Manual sorting</text>
+<text x="36.0" y="291.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Robotics lead reads and sorts</text>
+<text x="36.0" y="306.0" class="t2" font-size="12" text-anchor="start" font-weight="400">reports, usually weekly</text>
+<circle class="hurdle" cx="263" cy="263" r="9"/>
+<text x="263.0" y="267.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="267.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="284.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Slow, and the categories depend on</text>
+<text x="280.0" y="299.0" class="t2" font-size="12" text-anchor="start" font-weight="400">who does the sorting.</text>
+<line class="arrow" x1="131.0" y1="223" x2="131.0" y2="242" stroke-width="1.5"/>
+<path class="arrowhead" d="M131.0,248 l-4.5,-7 h9 z"/>
+<rect class="box-model" x="540" y="250" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="272.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Classify reports</text>
+<text x="552.0" y="291.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Category and priority, with a</text>
+<text x="552.0" y="306.0" class="t2" font-size="12" text-anchor="start" font-weight="400">written rationale</text>
+<rect class="pill-model" x="694.4" y="259" width="51.6" height="17" rx="8.5"/>
+<text x="720.2" y="271.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude</text>
+<circle class="gain" cx="779" cy="263" r="9"/>
+<text x="779.0" y="267.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="267.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="284.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Every report triaged on arrival with</text>
+<text x="796.0" y="299.0" class="t2" font-size="12" text-anchor="start" font-weight="400">one rubric. 20/20 categories correct</text>
+<text x="796.0" y="314.0" class="t2" font-size="12" text-anchor="start" font-weight="400">on the test set.</text>
+<line class="arrow" x1="647.0" y1="223" x2="647.0" y2="242" stroke-width="1.5"/>
+<path class="arrowhead" d="M647.0,248 l-4.5,-7 h9 z"/>
+<rect class="box" x="24" y="350" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="372.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Spot duplicates</text>
+<text x="36.0" y="391.0" class="t2" font-size="12" text-anchor="start" font-weight="400">From memory, across weeks of</text>
+<text x="36.0" y="406.0" class="t2" font-size="12" text-anchor="start" font-weight="400">reports</text>
+<circle class="hurdle" cx="263" cy="363" r="9"/>
+<text x="263.0" y="367.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="367.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="384.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Repeats are filed as separate jobs</text>
+<text x="280.0" y="399.0" class="t2" font-size="12" text-anchor="start" font-weight="400">or missed, hiding the pattern.</text>
+<line class="arrow" x1="131.0" y1="323" x2="131.0" y2="342" stroke-width="1.5"/>
+<path class="arrowhead" d="M131.0,348 l-4.5,-7 h9 z"/>
+<rect class="box-model" x="540" y="350" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="372.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Merge duplicates</text>
+<text x="552.0" y="391.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Reports with one root cause</text>
+<text x="552.0" y="406.0" class="t2" font-size="12" text-anchor="start" font-weight="400">become one issue</text>
+<rect class="pill-model" x="694.4" y="359" width="51.6" height="17" rx="8.5"/>
+<text x="720.2" y="371.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude</text>
+<circle class="gain" cx="779" cy="363" r="9"/>
+<text x="779.0" y="367.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="367.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="384.0" class="t2" font-size="12" text-anchor="start" font-weight="400">20 reports became 11 issues in this</text>
+<text x="796.0" y="399.0" class="t2" font-size="12" text-anchor="start" font-weight="400">run; report counts show how</text>
+<text x="796.0" y="414.0" class="t2" font-size="12" text-anchor="start" font-weight="400">widespread a problem is.</text>
+<line class="arrow" x1="647.0" y1="323" x2="647.0" y2="342" stroke-width="1.5"/>
+<path class="arrowhead" d="M647.0,348 l-4.5,-7 h9 z"/>
+<rect class="box" x="24" y="450" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="472.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Write tickets</text>
+<text x="36.0" y="491.0" class="t2" font-size="12" text-anchor="start" font-weight="400">An engineer rewrites reports</text>
+<text x="36.0" y="506.0" class="t2" font-size="12" text-anchor="start" font-weight="400">into tickets</text>
+<circle class="hurdle" cx="263" cy="463" r="9"/>
+<text x="263.0" y="467.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="467.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="484.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Vague tickets; back-and-forth to</text>
+<text x="280.0" y="499.0" class="t2" font-size="12" text-anchor="start" font-weight="400">recover tag numbers, readings and</text>
+<text x="280.0" y="514.0" class="t2" font-size="12" text-anchor="start" font-weight="400">cause.</text>
+<line class="arrow" x1="131.0" y1="423" x2="131.0" y2="442" stroke-width="1.5"/>
+<path class="arrowhead" d="M131.0,448 l-4.5,-7 h9 z"/>
+<rect class="box-model" x="540" y="450" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="472.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Draft tickets</text>
+<text x="552.0" y="491.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Problem, likely cause, proposed</text>
+<text x="552.0" y="506.0" class="t2" font-size="12" text-anchor="start" font-weight="400">feature, acceptance criteria</text>
+<rect class="pill-model" x="694.4" y="459" width="51.6" height="17" rx="8.5"/>
+<text x="720.2" y="471.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude</text>
+<circle class="gain" cx="779" cy="463" r="9"/>
+<text x="779.0" y="467.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="467.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="484.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Engineering-ready first draft that</text>
+<text x="796.0" y="499.0" class="t2" font-size="12" text-anchor="start" font-weight="400">keeps the tag numbers and readings.</text>
+<line class="arrow" x1="647.0" y1="423" x2="647.0" y2="442" stroke-width="1.5"/>
+<path class="arrowhead" d="M647.0,448 l-4.5,-7 h9 z"/>
+<rect class="box" x="24" y="550" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="572.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Prioritise in a meeting</text>
+<text x="36.0" y="591.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Ranked by judgement and the</text>
+<text x="36.0" y="606.0" class="t2" font-size="12" text-anchor="start" font-weight="400">urgency of the day</text>
+<circle class="hurdle" cx="263" cy="563" r="9"/>
+<text x="263.0" y="567.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="567.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="584.0" class="t2" font-size="12" text-anchor="start" font-weight="400">No shared measure of business</text>
+<text x="280.0" y="599.0" class="t2" font-size="12" text-anchor="start" font-weight="400">impact; the loudest issue wins.</text>
+<line class="arrow" x1="131.0" y1="523" x2="131.0" y2="542" stroke-width="1.5"/>
+<path class="arrowhead" d="M131.0,548 l-4.5,-7 h9 z"/>
+<rect class="box" x="540" y="550" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="572.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Score and rank</text>
+<text x="552.0" y="591.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Missed readings, downtime, false</text>
+<text x="552.0" y="606.0" class="t2" font-size="12" text-anchor="start" font-weight="400">callouts, safety</text>
+<rect class="pill-local" x="694.4" y="559" width="51.6" height="17" rx="8.5"/>
+<text x="720.2" y="571.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Python</text>
+<circle class="gain" cx="779" cy="563" r="9"/>
+<text x="779.0" y="567.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="567.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="584.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Transparent weights; the same</text>
+<text x="796.0" y="599.0" class="t2" font-size="12" text-anchor="start" font-weight="400">estimates always give the same</text>
+<text x="796.0" y="614.0" class="t2" font-size="12" text-anchor="start" font-weight="400">ranking.</text>
+<line class="arrow" x1="647.0" y1="523" x2="647.0" y2="542" stroke-width="1.5"/>
+<path class="arrowhead" d="M647.0,548 l-4.5,-7 h9 z"/>
+<rect class="box" x="24" y="650" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="36.0" y="672.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Engineering builds fixes</text>
+<text x="36.0" y="691.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Works the backlog as prioritised</text>
+<circle class="hurdle" cx="263" cy="663" r="9"/>
+<text x="263.0" y="667.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">!</text>
+<text x="280.0" y="667.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Hurdle</text>
+<text x="280.0" y="684.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Safety issues (an unseen H2 alert, a</text>
+<text x="280.0" y="699.0" class="t2" font-size="12" text-anchor="start" font-weight="400">gas sensor under-reading) can sit in</text>
+<text x="280.0" y="714.0" class="t2" font-size="12" text-anchor="start" font-weight="400">the pile.</text>
+<line class="arrow" x1="131.0" y1="623" x2="131.0" y2="642" stroke-width="1.5"/>
+<path class="arrowhead" d="M131.0,648 l-4.5,-7 h9 z"/>
+<rect class="box" x="540" y="650" width="214" height="70" rx="10" stroke-width="1"/>
+<text x="552.0" y="672.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Lead reviews, team builds</text>
+<text x="552.0" y="691.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Approves or reorders the ranked</text>
+<text x="552.0" y="706.0" class="t2" font-size="12" text-anchor="start" font-weight="400">backlog</text>
+<circle class="gain" cx="779" cy="663" r="9"/>
+<text x="779.0" y="667.5" class="on-pill" font-size="12" text-anchor="middle" font-weight="700">✓</text>
+<text x="796.0" y="667.5" class="t1" font-size="12" text-anchor="start" font-weight="600">Gain</text>
+<text x="796.0" y="684.0" class="t2" font-size="12" text-anchor="start" font-weight="400">People keep the final say and spend</text>
+<text x="796.0" y="699.0" class="t2" font-size="12" text-anchor="start" font-weight="400">their time on fixes, not sorting.</text>
+<line class="arrow" x1="647.0" y1="623" x2="647.0" y2="642" stroke-width="1.5"/>
+<path class="arrowhead" d="M647.0,648 l-4.5,-7 h9 z"/>
+</svg>

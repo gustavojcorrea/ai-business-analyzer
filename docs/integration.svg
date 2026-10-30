@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 500" width="1040" height="500" role="img" aria-labelledby="title desc">
+<title id="title">Systems and data boundary</title>
+<desc id="desc">Maximo, Teams and the shift log feed ingest.py, which redacts personal data inside the plant network. agent.py sends only redacted text to the Claude API and receives JSON. Outputs go to a backlog report for managers and, after preview and approval, to Jira Cloud.</desc>
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .surface { fill: #fcfcfb; stroke: rgba(11,11,11,0.10); }
+  .t1 { fill: #0b0b0b; } .t2 { fill: #52514e; } .t3 { fill: #898781; }
+  .grid { stroke: #e1e0d9; } .axis { stroke: #c3c2b7; }
+  .box { fill: #fcfcfb; stroke: #c3c2b7; } .box-model { fill: #eef4fc; stroke: #86b6ef; }
+  .pill-model { fill: #2a78d6; } .pill-local { fill: #52514e; } .on-pill { fill: #ffffff; }
+  .arrow { stroke: #898781; fill: none; } .arrowhead { fill: #898781; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hurdle { fill: #d03b3b; } .gain { fill: #0ca30c; }
+  .boundary { fill: none; stroke: #898781; }
+
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; stroke: rgba(255,255,255,0.10); }
+    .t1 { fill: #f0efec; } .t2 { fill: #c3c2b7; } .t3 { fill: #898781; }
+    .grid { stroke: #2c2c2a; } .axis { stroke: #383835; }
+    .box { fill: #1a1a19; stroke: #383835; } .box-model { fill: #16263b; stroke: #256abf; }
+    .pill-model { fill: #3987e5; } .pill-local { fill: #52514e; }
+
+  }
+</style>
+<rect class="surface" x="0.5" y="0.5" width="1039" height="499" rx="12"/>
+<text x="24.0" y="38.0" class="t1" font-size="17" text-anchor="start" font-weight="600">How it plugs into the plant&#x27;s systems</text>
+<text x="24.0" y="60.0" class="t2" font-size="13" text-anchor="start" font-weight="400">Reports are pulled read-only and stripped of personal data on the plant side. Only redacted text crosses to the Claude API.</text>
+<rect class="boundary" x="24" y="84" width="992" height="250" rx="12" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="40.0" y="106.0" class="t3" font-size="12" text-anchor="start" font-weight="600">Ridgeview IT network (plant side)</text>
+<rect class="box" x="44" y="124" width="200" height="48" rx="10" stroke-width="1"/>
+<text x="56.0" y="146.0" class="t1" font-size="13" text-anchor="start" font-weight="600">IBM Maximo</text>
+<text x="56.0" y="164.0" class="t2" font-size="12" text-anchor="start" font-weight="400">service requests</text>
+<path class="arrow" d="M244,148 L282,205" stroke-width="1.5"/>
+<rect class="box" x="44" y="188" width="200" height="48" rx="10" stroke-width="1"/>
+<text x="56.0" y="210.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Microsoft Teams</text>
+<text x="56.0" y="228.0" class="t2" font-size="12" text-anchor="start" font-weight="400">#spot-robot channel</text>
+<path class="arrow" d="M244,212 L282,205" stroke-width="1.5"/>
+<path class="arrowhead" d="M288,205 l-7,-4.5 v9 z"/>
+<rect class="box" x="44" y="252" width="200" height="48" rx="10" stroke-width="1"/>
+<text x="56.0" y="274.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Shift log (eLogbook)</text>
+<text x="56.0" y="292.0" class="t2" font-size="12" text-anchor="start" font-weight="400">control room entries</text>
+<path class="arrow" d="M244,276 L282,205" stroke-width="1.5"/>
+<rect class="box" x="290" y="150" width="190" height="110" rx="10" stroke-width="1"/>
+<text x="302.0" y="172.0" class="t1" font-size="13" text-anchor="start" font-weight="600">ingest.py</text>
+<text x="302.0" y="190.0" class="t2" font-size="12" text-anchor="start" font-weight="400">read-only pull</text>
+<text x="302.0" y="205.0" class="t2" font-size="12" text-anchor="start" font-weight="400">names → job roles</text>
+<text x="302.0" y="220.0" class="t2" font-size="12" text-anchor="start" font-weight="400">redact emails, phones,</text>
+<text x="302.0" y="235.0" class="t2" font-size="12" text-anchor="start" font-weight="400">badge IDs</text>
+<rect class="pill-local" x="420.4" y="159" width="51.6" height="17" rx="8.5"/>
+<text x="446.2" y="171.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Python</text>
+<path class="arrow" d="M480,205 H518" stroke-width="1.5"/>
+<path class="arrowhead" d="M524,205 l-7,-4.5 v9 z"/>
+<rect class="box-model" x="526" y="150" width="190" height="110" rx="10" stroke-width="1"/>
+<text x="538.0" y="172.0" class="t1" font-size="13" text-anchor="start" font-weight="600">agent.py</text>
+<text x="538.0" y="190.0" class="t2" font-size="12" text-anchor="start" font-weight="400">classify, merge,</text>
+<text x="538.0" y="205.0" class="t2" font-size="12" text-anchor="start" font-weight="400">draft tickets, rank,</text>
+<text x="538.0" y="220.0" class="t2" font-size="12" text-anchor="start" font-weight="400">map to site KPIs</text>
+<rect class="pill-model" x="656.4" y="159" width="51.6" height="17" rx="8.5"/>
+<text x="682.2" y="171.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude</text>
+<path class="arrow" d="M716,205 H740 V159 H750" stroke-width="1.5"/>
+<path class="arrowhead" d="M756,159 l-7,-4.5 v9 z"/>
+<path class="arrow" d="M740,205 V249 H750" stroke-width="1.5"/>
+<path class="arrowhead" d="M756,249 l-7,-4.5 v9 z"/>
+<rect class="box" x="762" y="124" width="234" height="70" rx="10" stroke-width="1"/>
+<text x="774.0" y="146.0" class="t1" font-size="13" text-anchor="start" font-weight="600">backlog.md + charts</text>
+<text x="774.0" y="164.0" class="t2" font-size="12" text-anchor="start" font-weight="400">for operations, reliability</text>
+<text x="774.0" y="179.0" class="t2" font-size="12" text-anchor="start" font-weight="400">and plant management</text>
+<rect class="box" x="762" y="214" width="234" height="70" rx="10" stroke-width="1"/>
+<text x="774.0" y="236.0" class="t1" font-size="13" text-anchor="start" font-weight="600">publish_jira.py</text>
+<text x="774.0" y="254.0" class="t2" font-size="12" text-anchor="start" font-weight="400">preview first; --apply creates</text>
+<text x="774.0" y="269.0" class="t2" font-size="12" text-anchor="start" font-weight="400">tickets, skips duplicates</text>
+<rect class="pill-local" x="936.4" y="223" width="51.6" height="17" rx="8.5"/>
+<text x="962.2" y="235.5" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Python</text>
+<rect class="box" x="526" y="384" width="190" height="56" rx="10" stroke-width="1"/>
+<text x="538.0" y="406.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Claude API</text>
+<text x="538.0" y="424.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Anthropic, over HTTPS</text>
+<rect class="box" x="762" y="384" width="234" height="56" rx="10" stroke-width="1"/>
+<text x="774.0" y="406.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Jira Cloud</text>
+<text x="774.0" y="424.0" class="t2" font-size="12" text-anchor="start" font-weight="400">ROBO project, robotics team</text>
+<path class="arrow" d="M604,262 V376" stroke-width="1.5"/>
+<path class="arrowhead" d="M604,382 l-4.5,-7 h9 z"/>
+<path class="arrow" d="M640,382 V268" stroke-width="1.5"/>
+<path class="arrowhead" d="M640,262 l-4.5,7 h9 z"/>
+<text x="594.0" y="352.0" class="t2" font-size="12" text-anchor="end" font-weight="400">sends: redacted text,</text>
+<text x="594.0" y="367.0" class="t2" font-size="12" text-anchor="end" font-weight="400">role, shift, mission</text>
+<text x="650.0" y="300.0" class="t2" font-size="12" text-anchor="start" font-weight="400">returns:</text>
+<text x="650.0" y="315.0" class="t2" font-size="12" text-anchor="start" font-weight="400">JSON only</text>
+<path class="arrow" d="M879,286 V376" stroke-width="1.5"/>
+<path class="arrowhead" d="M879,382 l-4.5,-7 h9 z"/>
+<text x="871.0" y="352.0" class="t2" font-size="12" text-anchor="end" font-weight="400">tickets with report IDs,</text>
+<text x="871.0" y="367.0" class="t2" font-size="12" text-anchor="end" font-weight="400">no names</text>
+<text x="24.0" y="476.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Stays on the plant side: names, emails, phone numbers, badge IDs, the staff roster and the audit log (hashes and token counts, no content).</text>
+</svg>

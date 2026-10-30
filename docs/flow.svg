@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 600" width="1040" height="600" role="img" aria-labelledby="title desc">
+<title id="title">Feedback items merged into ranked issues</title>
+<desc id="desc">Flow diagram linking each feedback item, coloured by predicted category, to the ranked issue it was merged into.</desc>
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .surface { fill: #fcfcfb; stroke: rgba(11,11,11,0.10); }
+  .t1 { fill: #0b0b0b; } .t2 { fill: #52514e; } .t3 { fill: #898781; }
+  .grid { stroke: #e1e0d9; } .axis { stroke: #c3c2b7; }
+  .box { fill: #fcfcfb; stroke: #c3c2b7; } .box-model { fill: #eef4fc; stroke: #86b6ef; }
+  .pill-model { fill: #2a78d6; } .pill-local { fill: #52514e; } .on-pill { fill: #ffffff; }
+  .arrow { stroke: #898781; fill: none; } .arrowhead { fill: #898781; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hurdle { fill: #d03b3b; } .gain { fill: #0ca30c; }
+  .boundary { fill: none; stroke: #898781; }
+  .s0 { fill: #2a78d6; } .b0 { stroke: #2a78d6; }
+  .s1 { fill: #eb6834; } .b1 { stroke: #eb6834; }
+  .s2 { fill: #1baf7a; } .b2 { stroke: #1baf7a; }
+  .s3 { fill: #eda100; } .b3 { stroke: #eda100; }
+  .s4 { fill: #e87ba4; } .b4 { stroke: #e87ba4; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; stroke: rgba(255,255,255,0.10); }
+    .t1 { fill: #f0efec; } .t2 { fill: #c3c2b7; } .t3 { fill: #898781; }
+    .grid { stroke: #2c2c2a; } .axis { stroke: #383835; }
+    .box { fill: #1a1a19; stroke: #383835; } .box-model { fill: #16263b; stroke: #256abf; }
+    .pill-model { fill: #3987e5; } .pill-local { fill: #52514e; }
+    .s0 { fill: #3987e5; } .b0 { stroke: #3987e5; }
+    .s1 { fill: #d95926; } .b1 { stroke: #d95926; }
+    .s2 { fill: #199e70; } .b2 { stroke: #199e70; }
+    .s3 { fill: #c98500; } .b3 { stroke: #c98500; }
+    .s4 { fill: #d55181; } .b4 { stroke: #d55181; }
+  }
+</style>
+<rect class="surface" x="0.5" y="0.5" width="1039" height="599" rx="12"/>
+<text x="24.0" y="38.0" class="t1" font-size="17" text-anchor="start" font-weight="600">From 20 feedback items to 11 ranked issues</text>
+<text x="24.0" y="60.0" class="t2" font-size="13" text-anchor="start" font-weight="400">Each band is one feedback item. Colour is the category Claude assigned; bands that converge were merged as duplicates.</text>
+<text x="260.0" y="86.0" class="t3" font-size="12" text-anchor="end" font-weight="600">Feedback item</text>
+<text x="672.0" y="86.0" class="t3" font-size="12" text-anchor="start" font-weight="600">Issue (rank · title)</text>
+<text x="1016.0" y="86.0" class="t3" font-size="12" text-anchor="end" font-weight="600">Impact</text>
+<path class="s0" fill-opacity="0.38" d="M260,105.0 C455.0,105.0 455.0,264.2 650,264.2 V282.2 C455.0,282.2 455.0,123.0 260,123.0 Z"/>
+<rect class="s0" x="250" y="105.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="118.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-001</text>
+<path class="s0" fill-opacity="0.38" d="M260,125.0 C455.0,125.0 455.0,284.2 650,284.2 V302.2 C455.0,302.2 455.0,143.0 260,143.0 Z"/>
+<rect class="s0" x="250" y="125.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="138.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-002</text>
+<path class="s0" fill-opacity="0.38" d="M260,145.0 C455.0,145.0 455.0,304.2 650,304.2 V322.2 C455.0,322.2 455.0,163.0 260,163.0 Z"/>
+<rect class="s0" x="250" y="145.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="158.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-003</text>
+<path class="s0" fill-opacity="0.38" d="M260,165.0 C455.0,165.0 455.0,469.8 650,469.8 V487.8 C455.0,487.8 455.0,183.0 260,183.0 Z"/>
+<rect class="s0" x="250" y="165.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="178.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-019</text>
+<path class="s1" fill-opacity="0.38" d="M260,201.0 C455.0,201.0 455.0,330.6 650,330.6 V348.6 C455.0,348.6 455.0,219.0 260,219.0 Z"/>
+<rect class="s1" x="250" y="201.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="214.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-007</text>
+<path class="s1" fill-opacity="0.38" d="M260,221.0 C455.0,221.0 455.0,350.6 650,350.6 V368.6 C455.0,368.6 455.0,239.0 260,239.0 Z"/>
+<rect class="s1" x="250" y="221.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="234.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-008</text>
+<path class="s1" fill-opacity="0.38" d="M260,241.0 C455.0,241.0 455.0,370.6 650,370.6 V388.6 C455.0,388.6 455.0,259.0 260,259.0 Z"/>
+<rect class="s1" x="250" y="241.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="254.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-009</text>
+<path class="s1" fill-opacity="0.38" d="M260,261.0 C455.0,261.0 455.0,423.4 650,423.4 V441.4 C455.0,441.4 455.0,279.0 260,279.0 Z"/>
+<rect class="s1" x="250" y="261.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="274.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-010</text>
+<path class="s1" fill-opacity="0.38" d="M260,281.0 C455.0,281.0 455.0,443.4 650,443.4 V461.4 C455.0,461.4 455.0,299.0 260,299.0 Z"/>
+<rect class="s1" x="250" y="281.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="294.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-011</text>
+<path class="s2" fill-opacity="0.38" d="M260,317.0 C455.0,317.0 455.0,171.4 650,171.4 V189.4 C455.0,189.4 455.0,335.0 260,335.0 Z"/>
+<rect class="s2" x="250" y="317.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="330.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-004</text>
+<path class="s2" fill-opacity="0.38" d="M260,337.0 C455.0,337.0 455.0,191.4 650,191.4 V209.4 C455.0,209.4 455.0,355.0 260,355.0 Z"/>
+<rect class="s2" x="250" y="337.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="350.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-005</text>
+<path class="s2" fill-opacity="0.38" d="M260,357.0 C455.0,357.0 455.0,211.4 650,211.4 V229.4 C455.0,229.4 455.0,375.0 260,375.0 Z"/>
+<rect class="s2" x="250" y="357.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="370.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-006</text>
+<path class="s2" fill-opacity="0.38" d="M260,377.0 C455.0,377.0 455.0,397.0 650,397.0 V415.0 C455.0,415.0 455.0,395.0 260,395.0 Z"/>
+<rect class="s2" x="250" y="377.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="390.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-018</text>
+<path class="s2" fill-opacity="0.38" d="M260,397.0 C455.0,397.0 455.0,237.8 650,237.8 V255.8 C455.0,255.8 455.0,415.0 260,415.0 Z"/>
+<rect class="s2" x="250" y="397.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="410.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-020</text>
+<path class="s3" fill-opacity="0.38" d="M260,433.0 C455.0,433.0 455.0,105.0 650,105.0 V123.0 C455.0,123.0 455.0,451.0 260,451.0 Z"/>
+<rect class="s3" x="250" y="433.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="446.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-012</text>
+<path class="s3" fill-opacity="0.38" d="M260,453.0 C455.0,453.0 455.0,125.0 650,125.0 V143.0 C455.0,143.0 455.0,471.0 260,471.0 Z"/>
+<rect class="s3" x="250" y="453.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="466.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-013</text>
+<path class="s3" fill-opacity="0.38" d="M260,473.0 C455.0,473.0 455.0,145.0 650,145.0 V163.0 C455.0,163.0 455.0,491.0 260,491.0 Z"/>
+<rect class="s3" x="250" y="473.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="486.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-014</text>
+<path class="s4" fill-opacity="0.38" d="M260,509.0 C455.0,509.0 455.0,522.6 650,522.6 V540.6 C455.0,540.6 455.0,527.0 260,527.0 Z"/>
+<rect class="s4" x="250" y="509.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="522.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-015</text>
+<path class="s4" fill-opacity="0.38" d="M260,529.0 C455.0,529.0 455.0,496.2 650,496.2 V514.2 C455.0,514.2 455.0,547.0 260,547.0 Z"/>
+<rect class="s4" x="250" y="529.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="542.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-016</text>
+<path class="s4" fill-opacity="0.38" d="M260,549.0 C455.0,549.0 455.0,549.0 650,549.0 V567.0 C455.0,567.0 455.0,567.0 260,567.0 Z"/>
+<rect class="s4" x="250" y="549.0" width="10" height="18" rx="2"/>
+<text x="242.0" y="562.0" class="t2" font-size="12" text-anchor="end" font-weight="400">FB-017</text>
+<rect class="s0" x="24" y="132.0" width="10" height="10" rx="2"/>
+<text x="42.0" y="141.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Perception</text>
+<text x="42.0" y="158.0" class="t3" font-size="12" text-anchor="start" font-weight="400">4 items</text>
+<rect class="s1" x="24" y="238.0" width="10" height="10" rx="2"/>
+<text x="42.0" y="247.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Mobility / route</text>
+<text x="42.0" y="264.0" class="t3" font-size="12" text-anchor="start" font-weight="400">5 items</text>
+<rect class="s2" x="24" y="354.0" width="10" height="10" rx="2"/>
+<text x="42.0" y="363.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Sensing</text>
+<text x="42.0" y="380.0" class="t3" font-size="12" text-anchor="start" font-weight="400">5 items</text>
+<rect class="s3" x="24" y="450.0" width="10" height="10" rx="2"/>
+<text x="42.0" y="459.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Alerts</text>
+<text x="42.0" y="476.0" class="t3" font-size="12" text-anchor="start" font-weight="400">3 items</text>
+<rect class="s4" x="24" y="526.0" width="10" height="10" rx="2"/>
+<text x="42.0" y="535.0" class="t1" font-size="13" text-anchor="start" font-weight="600">Feature request</text>
+<text x="42.0" y="552.0" class="t3" font-size="12" text-anchor="start" font-weight="400">3 items</text>
+<rect class="s3" x="650" y="105.0" width="10" height="58" rx="2"/>
+<text x="672.0" y="138.5" class="t3" font-size="12" text-anchor="start" font-weight="600">1</text>
+<text x="692.0" y="138.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Route Spot inspection alerts into DCS…</text>
+<text x="1016.0" y="138.5" class="t1 num" font-size="13" text-anchor="end" font-weight="600">49.0</text>
+<rect class="s2" x="650" y="171.4" width="10" height="58" rx="2"/>
+<text x="672.0" y="204.9" class="t3" font-size="12" text-anchor="start" font-weight="600">2</text>
+<text x="692.0" y="204.9" class="t1" font-size="13" text-anchor="start" font-weight="400">Gate Spot thermal alarms on live DCS…</text>
+<text x="1016.0" y="204.9" class="t1 num" font-size="13" text-anchor="end" font-weight="600">38.9</text>
+<rect class="s2" x="650" y="237.8" width="10" height="18" rx="2"/>
+<text x="672.0" y="251.3" class="t3" font-size="12" text-anchor="start" font-weight="600">3</text>
+<text x="692.0" y="251.3" class="t1" font-size="13" text-anchor="start" font-weight="400">Spot gas payload under-reads H2S versus…</text>
+<text x="1016.0" y="251.3" class="t1 num" font-size="13" text-anchor="end" font-weight="600">37.8</text>
+<rect class="s0" x="650" y="264.2" width="10" height="58" rx="2"/>
+<text x="672.0" y="297.7" class="t3" font-size="12" text-anchor="start" font-weight="600">4</text>
+<text x="692.0" y="297.7" class="t1" font-size="13" text-anchor="start" font-weight="400">Gauge reader returns wrong values when…</text>
+<text x="1016.0" y="297.7" class="t1 num" font-size="13" text-anchor="end" font-weight="600">32.1</text>
+<rect class="s1" x="650" y="330.6" width="10" height="58" rx="2"/>
+<text x="672.0" y="364.1" class="t3" font-size="12" text-anchor="start" font-weight="600">5</text>
+<text x="692.0" y="364.1" class="t1" font-size="13" text-anchor="start" font-weight="400">Spot needs stairwell yield, wait-retry…</text>
+<text x="1016.0" y="364.1" class="t1 num" font-size="13" text-anchor="end" font-weight="600">31.0</text>
+<rect class="s2" x="650" y="397.0" width="10" height="18" rx="2"/>
+<text x="672.0" y="410.5" class="t3" font-size="12" text-anchor="start" font-weight="600">6</text>
+<text x="692.0" y="410.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Suppress acoustic leak false positives…</text>
+<text x="1016.0" y="410.5" class="t1 num" font-size="13" text-anchor="end" font-weight="600">28.9</text>
+<rect class="s1" x="650" y="423.4" width="10" height="38" rx="2"/>
+<text x="672.0" y="446.9" class="t3" font-size="12" text-anchor="start" font-weight="600">7</text>
+<text x="692.0" y="446.9" class="t1" font-size="13" text-anchor="start" font-weight="400">Full Plant Evening Round exceeds Spot…</text>
+<text x="1016.0" y="446.9" class="t1 num" font-size="13" text-anchor="end" font-weight="600">27.1</text>
+<rect class="s0" x="650" y="469.8" width="10" height="18" rx="2"/>
+<text x="672.0" y="483.3" class="t3" font-size="12" text-anchor="start" font-weight="600">8</text>
+<text x="692.0" y="483.3" class="t1" font-size="13" text-anchor="start" font-weight="400">Oil level check returns &#x27;unable to read&#x27;…</text>
+<text x="1016.0" y="483.3" class="t1 num" font-size="13" text-anchor="end" font-weight="600">20.1</text>
+<rect class="s4" x="650" y="496.2" width="10" height="18" rx="2"/>
+<text x="672.0" y="509.7" class="t3" font-size="12" text-anchor="start" font-weight="600">9</text>
+<text x="692.0" y="509.7" class="t1" font-size="13" text-anchor="start" font-weight="400">Add weekly cooling tower basin staff…</text>
+<text x="1016.0" y="509.7" class="t1 num" font-size="13" text-anchor="end" font-weight="600">0.2</text>
+<rect class="s4" x="650" y="522.6" width="10" height="18" rx="2"/>
+<text x="672.0" y="536.1" class="t3" font-size="12" text-anchor="start" font-weight="600">10</text>
+<text x="692.0" y="536.1" class="t1" font-size="13" text-anchor="start" font-weight="400">Add CEMS shelter inspection points to…</text>
+<text x="1016.0" y="536.1" class="t1 num" font-size="13" text-anchor="end" font-weight="600">0.0</text>
+<rect class="s4" x="650" y="549.0" width="10" height="18" rx="2"/>
+<text x="672.0" y="562.5" class="t3" font-size="12" text-anchor="start" font-weight="600">11</text>
+<text x="692.0" y="562.5" class="t1" font-size="13" text-anchor="start" font-weight="400">Add monthly turbine-deck mission to…</text>
+<text x="1016.0" y="562.5" class="t1 num" font-size="13" text-anchor="end" font-weight="600">0.0</text>
+</svg>

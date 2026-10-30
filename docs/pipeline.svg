@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 330" width="1040" height="330" role="img" aria-labelledby="title desc">
+<title id="title">Agent pipeline</title>
+<desc id="desc">Feedback flows through classify, merge, ticket and rank steps into a ranked backlog; classifications also feed the evaluation script.</desc>
+<style>
+  svg { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .surface { fill: #fcfcfb; stroke: rgba(11,11,11,0.10); }
+  .t1 { fill: #0b0b0b; } .t2 { fill: #52514e; } .t3 { fill: #898781; }
+  .grid { stroke: #e1e0d9; } .axis { stroke: #c3c2b7; }
+  .box { fill: #fcfcfb; stroke: #c3c2b7; } .box-model { fill: #eef4fc; stroke: #86b6ef; }
+  .pill-model { fill: #2a78d6; } .pill-local { fill: #52514e; } .on-pill { fill: #ffffff; }
+  .arrow { stroke: #898781; fill: none; } .arrowhead { fill: #898781; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hurdle { fill: #d03b3b; } .gain { fill: #0ca30c; }
+  .boundary { fill: none; stroke: #898781; }
+
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; stroke: rgba(255,255,255,0.10); }
+    .t1 { fill: #f0efec; } .t2 { fill: #c3c2b7; } .t3 { fill: #898781; }
+    .grid { stroke: #2c2c2a; } .axis { stroke: #383835; }
+    .box { fill: #1a1a19; stroke: #383835; } .box-model { fill: #16263b; stroke: #256abf; }
+    .pill-model { fill: #3987e5; } .pill-local { fill: #52514e; }
+
+  }
+</style>
+<rect class="surface" x="0.5" y="0.5" width="1039" height="329" rx="12"/>
+<text x="24.0" y="38.0" class="t1" font-size="17" text-anchor="start" font-weight="600">How the agent turns feedback into a backlog</text>
+<text x="24.0" y="60.0" class="t2" font-size="13" text-anchor="start" font-weight="400">Three Claude API steps with JSON-schema outputs, then a deterministic ranking step in Python. 32 API calls per run.</text>
+<rect class="box" x="17.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="31.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">feedback.json</text>
+<text x="31.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">20 operator and</text>
+<text x="31.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">technician reports</text>
+<rect class="box-model" x="189.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="203.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">1 · Classify</text>
+<text x="203.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">category, priority,</text>
+<text x="203.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">one-line summary</text>
+<rect class="pill-model" x="203.0" y="175" width="80.6" height="18" rx="9"/>
+<text x="243.3" y="188.0" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude × 20</text>
+<line class="arrow" x1="167.0" y1="148.0" x2="183.0" y2="148.0" stroke-width="1.5"/>
+<path class="arrowhead" d="M188.0,148.0 l-7,-4.5 v9 z"/>
+<rect class="box-model" x="361.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="375.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">2 · Merge</text>
+<text x="375.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">duplicates into</text>
+<text x="375.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">issues (20 → 11)</text>
+<rect class="pill-model" x="375.0" y="175" width="74.0" height="18" rx="9"/>
+<text x="412.0" y="188.0" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude × 1</text>
+<line class="arrow" x1="339.0" y1="148.0" x2="355.0" y2="148.0" stroke-width="1.5"/>
+<path class="arrowhead" d="M360.0,148.0 l-7,-4.5 v9 z"/>
+<rect class="box-model" x="533.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="547.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">3 · Ticket</text>
+<text x="547.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">ticket draft +</text>
+<text x="547.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">4 impact estimates</text>
+<rect class="pill-model" x="547.0" y="175" width="80.6" height="18" rx="9"/>
+<text x="587.3" y="188.0" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Claude × 11</text>
+<line class="arrow" x1="511.0" y1="148.0" x2="527.0" y2="148.0" stroke-width="1.5"/>
+<path class="arrowhead" d="M532.0,148.0 l-7,-4.5 v9 z"/>
+<rect class="box" x="705.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="719.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">4 · Rank</text>
+<text x="719.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">0–100 impact score,</text>
+<text x="719.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">sorted backlog</text>
+<rect class="pill-local" x="719.0" y="175" width="47.6" height="18" rx="9"/>
+<text x="742.8" y="188.0" class="on-pill" font-size="11" text-anchor="middle" font-weight="600">Python</text>
+<line class="arrow" x1="683.0" y1="148.0" x2="699.0" y2="148.0" stroke-width="1.5"/>
+<path class="arrowhead" d="M704.0,148.0 l-7,-4.5 v9 z"/>
+<rect class="box" x="877.0" y="96" width="146" height="104" rx="10" stroke-width="1"/>
+<text x="891.0" y="124.0" class="t1" font-size="14" text-anchor="start" font-weight="600">backlog.md</text>
+<text x="891.0" y="148.0" class="t2" font-size="12" text-anchor="start" font-weight="400">ranked tickets</text>
+<text x="891.0" y="165.0" class="t2" font-size="12" text-anchor="start" font-weight="400">+ backlog.json</text>
+<line class="arrow" x1="855.0" y1="148.0" x2="871.0" y2="148.0" stroke-width="1.5"/>
+<path class="arrowhead" d="M876.0,148.0 l-7,-4.5 v9 z"/>
+<line class="arrow" x1="262.0" y1="202" x2="262.0" y2="239" stroke-width="1.5" stroke-dasharray="0"/>
+<path class="arrowhead" d="M262.0,245 l-4.5,-7 h9 z"/>
+<text x="270.0" y="228.0" class="t3" font-size="12" text-anchor="start" font-weight="400">classifications.json</text>
+<rect class="box" x="189.0" y="246" width="318" height="62" rx="10" stroke-width="1"/>
+<text x="203.0" y="272.0" class="t1" font-size="14" text-anchor="start" font-weight="600">eval.py  ← labels.json</text>
+<text x="203.0" y="292.0" class="t2" font-size="12" text-anchor="start" font-weight="400">category and priority accuracy, confusion matrix</text>
+<rect class="box-model" x="533.0" y="260" width="16" height="12" rx="3" stroke-width="1"/>
+<text x="557.0" y="271.0" class="t2" font-size="12" text-anchor="start" font-weight="400">Claude API call (structured JSON output)</text>
+<rect class="box" x="533.0" y="282" width="16" height="12" rx="3" stroke-width="1"/>
+<text x="557.0" y="293.0" class="t2" font-size="12" text-anchor="start" font-weight="400">File or local Python step</text>
+</svg>
